@@ -1,0 +1,86 @@
+<!DOCTYPE html> {% load static %}
+<html>
+
+<head>
+    <title>resume-screener</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{%static 'css/home.css'%}">
+
+<body>
+    <div class="container">
+        <div class='part1'>
+            <div class='jumbo1'>
+                <div class="jumbotron">
+                    <h1>Resume Summarizer</h1>
+                    <hr>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class='part2'>
+            <div class='jumbo2'>
+
+                <div class="jumbotron">
+
+                    <form action="{% url 'fileapp:uploads'%}" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">click to upload</label>
+                            <input type="file" multiple name='uploadfoles' class="form-control-file" name="filename" id="exampleFormControlFile1">
+                            <label>Resume should be in pdf form and upto 10mb</label>
+                            <br><br> {% csrf_token %}
+                            <label>click submit button to save your resume</label>
+
+                            <button type="submit">submit</button>
+                            <label id='resumenot'>Resume not selected</label>
+
+
+
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class='part3'>
+            <div class='jumbo3'>
+
+                <div class="jumbotron">
+                    <br>
+                    <label>summarize data from Resume</label><br>
+                    <a class="btn btn-default btn-lg" href='/show' role='button'>SHOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
