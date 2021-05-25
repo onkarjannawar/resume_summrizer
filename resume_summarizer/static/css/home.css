@@ -1,0 +1,112 @@
+.part1 .jumbotron {
+    height: 200px;
+    width: 100%
+}
+
+.part1 {
+    padding-top: 40px;
+}
+
+.part2 .jumbotron {
+    float: left;
+    height: 300px;
+    width: 48%;
+}
+
+.part2 {
+    padding-right: 2px;
+}
+
+.part3 .jumbotron {
+    float: right;
+    height: 300px;
+    width: 48%;
+}
+
+.part3 {
+    padding-left: 2px;
+}
+
+.jumbotron h1 {
+    font-weight: bolder;
+    padding-left: 200px;
+    font-size: 70px;
+    border-bottom: 10px;
+}
+
+body {
+    background-color: rgb(163, 199, 80);
+}
+
+input {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(108, 108, 236);
+}
+
+.jumbotron a {
+    background-color: rgb(165, 165, 35);
+    border-radius: 20px;
+    color: black;
+    font-style: bold;
+    font-weight: bold;
+    elevation: -1
+}
+
+label {
+    font-weight: bold;
+}
+
+.jumbotron hr {
+    height: 20px;
+    color: rgb(96, 107, 212);
+}
+
+button {
+    background-color: rgb(58, 247, 89);
+    border-radius: 20px;
+    color: black;
+    font-style: bold;
+    font-weight: bold;
+    font-size: 25px;
+    height: 50px;
+    width: 150px;
+    elevation: -1
+}
+
+.jumbotron #hrline {
+    border-bottom: 15px;
+    border-color: #c09425;
+}
+
+#showpage {
+    height: 500px;
+    width: 500px;
+    padding-left: 400px;
+    padding-top: 20px;
+    border: 16px bevel;
+    elevation: 5
+}
+
+.container td {
+    padding: 10px 30px 10px 50px;
+    border-color: black;
+    border: 12px bevel;
+    elevation: -1
+}
+
+#keytd {
+    width: 200px;
+    font-weight: bold;
+}
+
+#valtd {
+    font-size: large;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#resumenot {
+    font-size: 20px;
+    color: rgb(238, 28, 28);
+}
